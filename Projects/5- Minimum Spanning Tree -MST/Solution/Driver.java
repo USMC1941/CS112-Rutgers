@@ -5,7 +5,9 @@ import structures.Graph;
 import java.io.IOException;
 import java.util.ArrayList;
 
-
+/**
+ * Class used for testing the MST
+ */
 public class Driver {
 
     public static void main(String[] args) {
