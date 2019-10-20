@@ -5,30 +5,34 @@ import java.util.NoSuchElementException;
 public class StringLL {
 
 	StringNode front; // front of our LL
-	int size; // size of the LL
-	
+	int        size; // size of the LL
+
 	StringLL() {
 		this.front = null;
 		size = 0;
 	}
+
 	void clear() {
 		front = null;
 		size = 0;
 	}
+
 	void addToFront(String data) {
 		/* O(1) */
 		front = new StringNode(data, front);
 		size++;
 	}
-	void traverse () {
+
+	void traverse() {
 		/* O(n) */
-		System.out.printf("Linked list has %d nodes\n",size);
+		System.out.printf("Linked list has %d nodes\n", size);
 		for (StringNode ptr = front; ptr != null; ptr = ptr.next) {
 			System.out.printf("%s ->", ptr.data);
 		}
 		System.out.println();
 	}
-	boolean search (String target) {
+
+	boolean search(String target) {
 		for (StringNode ptr = front; ptr != null; ptr = ptr.next) {
 			if (ptr.data.equals(target)) {
 				return true;
@@ -36,7 +40,8 @@ public class StringLL {
 		}
 		return false;
 	}
-	boolean addAfter (String target, String data) {
+
+	boolean addAfter(String target, String data) {
 		for (StringNode ptr = front; ptr != null; ptr = ptr.next) {
 			if (ptr.data.equals(target)) {
 				StringNode node = new StringNode(data, ptr.next);
@@ -47,8 +52,9 @@ public class StringLL {
 		}
 		return false;
 	}
-	void delete (String target) {
-		StringNode ptr = front;
+
+	void delete(String target) {
+		StringNode ptr  = front;
 		StringNode prev = null;
 		while (ptr != null && !ptr.data.equals(target)) {
 			prev = ptr;
@@ -57,16 +63,19 @@ public class StringLL {
 		if (ptr == null) {
 			/* target was not found */
 			throw new NoSuchElementException(target + " not found");
-		} else if (ptr == front) {
+		}
+		else if (ptr == front) {
 			/* target is the first node of the LL */
 			front = front.next;
 			size--;
-		} else {
+		}
+		else {
 			prev.next = ptr.next;
 			size--;
 		}
 	}
-	public static void main (String[] args) {
+
+	public static void main(String[] args) {
 		StringLL ll = new StringLL();
 		ll.addToFront("Tuesday");
 		ll.addToFront("Monday");
@@ -75,11 +84,12 @@ public class StringLL {
 		ll.traverse();
 		try {
 			ll.delete("Friday");
-		} catch (NoSuchElementException e) {
+		}
+		catch (NoSuchElementException e) {
 			System.out.println("Exception happend");
 			System.exit(1);
 		}
-		
+
 		System.out.println("After");
 	}
 }

@@ -9,46 +9,46 @@ import java.util.NoSuchElementException;
 public class ALStack<T> {
 
 	ArrayList<T> items;
-	
-	public ALStack () {
+
+	public ALStack() {
 		items = new ArrayList<T>();
 	}
-	
-	public ALStack (int initialCapacity) {
-		items = new ArrayList<T> (initialCapacity);
+
+	public ALStack(int initialCapacity) {
+		items = new ArrayList<T>(initialCapacity);
 	}
-	
-	public void push (T item) {
+
+	public void push(T item) {
 		items.add(item);
 	}
-	
-	public T pop () {
+
+	public T pop() {
 		if (items.size() == 0) {
 			throw new NoSuchElementException();
 		}
-		return items.remove(items.size()-1);
+		return items.remove(items.size() - 1);
 	}
-	
-	public T peek () {
+
+	public T peek() {
 		if (items.size() == 0) {
 			throw new NoSuchElementException();
 		}
-		return items.get(items.size()-1);
+		return items.get(items.size() - 1);
 	}
-	
-	public boolean isEmpty () {
+
+	public boolean isEmpty() {
 		return items.isEmpty();
 	}
-	
-	public int size () {
+
+	public int size() {
 		return items.size();
 	}
-	
+
 	public void clear() {
 		items.clear();
 	}
-	
-	public static void main (String[] args) {
+
+	public static void main(String[] args) {
 
 	}
 }

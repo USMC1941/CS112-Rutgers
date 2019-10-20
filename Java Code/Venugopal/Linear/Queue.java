@@ -3,10 +3,10 @@ package Linear;
 import java.util.NoSuchElementException;
 
 public class Queue<T> {
-	
+
 	private Node<T> rear;
-	private int size;
-	
+	private int     size;
+
 	public Queue() {
 		rear = null;
 		size = 0;
@@ -16,47 +16,47 @@ public class Queue<T> {
 		Node<T> newItem = new Node<T>(item, null);
 		if (rear == null) {
 			newItem.next = newItem;
-		} else {
+		}
+		else {
 			newItem.next = rear.next;
 			rear.next = newItem;
 		}
 		size++;
 		rear = newItem;
 	}
-	
-	public T dequeue() 
-	throws NoSuchElementException {
+
+	public T dequeue() throws NoSuchElementException {
 		if (rear == null) {
 			throw new NoSuchElementException("queue is empty");
 		}
 		T data = rear.next.data;
 		if (rear == rear.next) {
 			rear = null;
-		} else {
+		}
+		else {
 			rear.next = rear.next.next;
 		}
 		size--;
 		return data;
 	}
-	
+
 	public int size() {
 		return size;
 	}
-	
+
 	public boolean isEmpty() {
 		return size == 0;
 	}
-	
+
 	public void clear() {
 		size = 0;
 		rear = null;
 	}
-	
-	public T peek() 
-	throws NoSuchElementException {
+
+	public T peek() throws NoSuchElementException {
 		if (rear == null) {
 			throw new NoSuchElementException("queue is empty");
 		}
-		return rear.next.data;				
+		return rear.next.data;
 	}
 }

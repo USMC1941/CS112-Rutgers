@@ -1,22 +1,18 @@
 package Search;
 
-import java.io.*;
-import java.util.*;
-
 public class HashDemo {
 
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) 
-			throws IOException {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		// set up hash table
-		HashMap<String,String> machines = new HashMap<String,String>(300,1.5f);
+		HashMap<String, String> machines = new HashMap<String, String>(300, 1.5f);
 
 		System.out.print("Enter input file name: ");
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String file = br.readLine().trim();
+		BufferedReader br   = new BufferedReader(new InputStreamReader(System.in));
+		String         file = br.readLine().trim();
 
 		BufferedReader filebr = new BufferedReader(new FileReader(file));
 		// read lines
@@ -27,7 +23,7 @@ public class HashDemo {
 			machines.put(st.nextToken(), st.nextToken());
 		}
 		filebr.close();
-		
+
 		System.out.print("Enter machine you want to look up, or \"quit\": ");
 		String machine = br.readLine().toLowerCase();
 		while (!"quit".equals(machine)) {
@@ -42,7 +38,7 @@ public class HashDemo {
 			machine = br.readLine().toLowerCase();
 		}
 
-		Set<String> keys = machines.keySet();  // Set is of type String since keys are Strings
+		Set<String>      keys     = machines.keySet();  // Set is of type String since keys are Strings
 		Iterator<String> iterator = keys.iterator();
 		while (iterator.hasNext()) {
 			String key = iterator.next();

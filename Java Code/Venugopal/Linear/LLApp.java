@@ -5,7 +5,7 @@ public class LLApp {
 	public static IntNode addFront(int item, IntNode front) {
 		return new IntNode(item, front);
 	}
-	
+
 	public static IntNode deleteFront(IntNode front) {
 		if (front == null) {
 			System.out.println("Empty list, nothing to delete");
@@ -15,7 +15,7 @@ public class LLApp {
 	}
 
 	public static boolean search(IntNode front, int target) {
-		for (IntNode ptr=front; ptr != null; ptr=ptr.next) {
+		for (IntNode ptr = front; ptr != null; ptr = ptr.next) {
 			if (target == ptr.data) {
 				return true;
 			}
@@ -29,7 +29,7 @@ public class LLApp {
 			return;
 		}
 		System.out.print(front.data);  // first item
-		IntNode ptr=front.next;    // prepare to loop starting with second item
+		IntNode ptr = front.next;    // prepare to loop starting with second item
 		while (ptr != null) {
 			System.out.print("->" + ptr.data);
 			ptr = ptr.next;
@@ -38,11 +38,11 @@ public class LLApp {
 	}
 
 	// add newItem after oldItem
-    // returns true if added, false if not
+	// returns true if added, false if not
 	public static boolean addAfter(IntNode front, int oldItem, int newItem) {
 		// search and locate oldItem
-		IntNode ptr=front;
-		for (; ptr != null; ptr=ptr.next) {
+		IntNode ptr = front;
+		for (; ptr != null; ptr = ptr.next) {
 			if (oldItem == ptr.data) {
 				break;
 			}
@@ -57,14 +57,14 @@ public class LLApp {
 
 		/** OR
 		 * ptr.next = new IntNode(newItem, ptr.next);
-		 * 
+		 *
 		 */
 
 		return true;
 	}
-    
+
 	public static IntNode delete(IntNode front, int item) {
-		IntNode ptr=front, prev=null;
+		IntNode ptr = front, prev = null;
 		while (ptr != null) {
 			if (ptr.data == item) {
 				break;
@@ -84,9 +84,8 @@ public class LLApp {
 		prev.next = ptr.next;
 		return front;
 	}
-	
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		/*
 		IntNode front = null;
         traverse(front);  // test traverse on empty list
@@ -118,18 +117,17 @@ public class LLApp {
         addAfter(front, 6, 10);
         traverse(front);
         */
-        // testing StringLL object
-        StringLL stringLL = new StringLL();
-        stringLL.addFront("4");
-        stringLL.traverse();
-        stringLL.addFront("5");
-        stringLL.traverse();
-        stringLL.deleteFront();
-        stringLL.traverse();
-        stringLL.deleteFront();
-        stringLL.traverse();
-        stringLL.deleteFront();
-        stringLL.traverse();
+		// testing StringLL object
+		StringLL stringLL = new StringLL();
+		stringLL.addFront("4");
+		stringLL.traverse();
+		stringLL.addFront("5");
+		stringLL.traverse();
+		stringLL.deleteFront();
+		stringLL.traverse();
+		stringLL.deleteFront();
+		stringLL.traverse();
+		stringLL.deleteFront();
+		stringLL.traverse();
 	}
-
 }

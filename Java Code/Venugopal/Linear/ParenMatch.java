@@ -7,7 +7,7 @@ public class ParenMatch {
 
 	public static boolean parenMatch(String s) {
 		Stack<Character> stk = new Stack<Character>();
-		for (int i=0; i < s.length(); i++) {
+		for (int i = 0; i < s.length(); i++) {
 			char ch = s.charAt(i);
 			if (ch == '(' || ch == '[') {
 				stk.push(ch);   // AUTO BOXING => primitive ch is auto converted to Character
@@ -20,28 +20,28 @@ public class ParenMatch {
 						continue;
 					}
 					return false;   // mismatch in types of parens/brackets
-				} catch (NoSuchElementException e) {
+				}
+				catch (NoSuchElementException e) {
 					return false;   // more closes than opens
 				}
 			}
 		}
 		return stk.isEmpty();   // more opens than closes
 	}
-	
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter expression, 'quit' to stop: ");
 		String line = sc.nextLine();
 		while (!"quit".equals(line)) {
 			if (parenMatch(line)) {
 				System.out.println("Matched!");
-			} else {
+			}
+			else {
 				System.out.println("Did not match");
 			}
 			System.out.print("Enter expression, 'quit' to stop: ");
 			line = sc.nextLine();
 		}
 	}
-
 }

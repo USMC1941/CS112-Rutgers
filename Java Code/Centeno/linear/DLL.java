@@ -1,23 +1,25 @@
 package linear;
 
-public class DLL <T> {
+public class DLL<T> {
 
-	NodeDLL <T> front;
-	int size;
-	
-	DLL () {
+	NodeDLL<T> front;
+	int        size;
+
+	DLL() {
 		front = null;
 		size = 0;
 	}
-	void addToFront (T data) {		
-		NodeDLL <T> node = new NodeDLL<T> (data, null, front);
+
+	void addToFront(T data) {
+		NodeDLL<T> node = new NodeDLL<T>(data, null, front);
 		if (front != null) {
 			front.previous = node;
 		}
 		front = node;
 		size++;
 	}
-	void traverse () {
+
+	void traverse() {
 		NodeDLL<T> ptr = front;
 		while (ptr != null) {
 			System.out.print(ptr.data + " <-> ");
@@ -25,7 +27,8 @@ public class DLL <T> {
 		}
 		System.out.println();
 	}
-	void addAfter (T target, T data) {
+
+	void addAfter(T target, T data) {
 		NodeDLL<T> ptr = front;
 		while (ptr != null && !ptr.data.equals(target)) {
 			ptr = ptr.next;
@@ -40,17 +43,20 @@ public class DLL <T> {
 		}
 		size++;
 	}
-	void delete (T target) {
+
+	void delete(T target) {
 		NodeDLL<T> ptr = front;
-		while(ptr != null && !ptr.data.equals(target)) {
+		while (ptr != null && !ptr.data.equals(target)) {
 			ptr = ptr.next;
 		}
 		if (ptr == null) {
 			return;
-		} else {
+		}
+		else {
 			if (ptr.previous != null) {
 				ptr.previous.next = ptr.next;
-			} else {
+			}
+			else {
 				front = ptr.next;
 			}
 			if (ptr.next != null) {

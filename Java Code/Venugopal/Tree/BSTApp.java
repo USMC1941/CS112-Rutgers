@@ -6,18 +6,20 @@ class User implements Comparable<User> {
 	String lastName;
 	String firstName;
 	String id;
+
 	public User(String lastName, String firstName, String id) {
 		this.lastName = lastName;
 		this.firstName = firstName;
 		this.id = id;
 	}
+
 	public String toString() {
 		return firstName + " " + lastName + "(" + id + ")";
 	}
 
 	public int compareTo(User u) {
 		return id.compareTo(u.id); // piggyback on String compareTo
-	}  
+	}
 }
 
 public class BSTApp {
@@ -37,9 +39,9 @@ public class BSTApp {
 		System.out.println(bst.sort());
 
 		User[] users = new User[3];
-		users[0] = new User("Leonardo","DeCaprio","lcaprio");
-		users[1] = new User("Charlize","Theron","ctheron");
-		users[2] = new User("Matt","Damon","mdamon");
+		users[0] = new User("Leonardo", "DeCaprio", "lcaprio");
+		users[1] = new User("Charlize", "Theron", "ctheron");
+		users[2] = new User("Matt", "Damon", "mdamon");
 
 		BST<User> bst2 = new BST<User>();
 

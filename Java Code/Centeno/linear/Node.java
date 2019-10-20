@@ -1,10 +1,11 @@
 package linear;
 
-public class Node <T> {
+public class Node<T> {
 
-	T data;
+	T    data;
 	Node next;
-	Node (T data, Node next) {
+
+	Node(T data, Node next) {
 		this.data = data;
 		this.next = next;
 	}

@@ -3,7 +3,6 @@ package linear;
 public class DLLApp {
 
 	public static void main(String[] args) {
-		
 		DLL<String> dll = new DLL<String>();
 		dll.addToFront("blue");
 		dll.addToFront("scarlet");
@@ -17,7 +16,5 @@ public class DLLApp {
 		dll.traverse();
 		dll.delete("yellow");
 		dll.traverse();
-
 	}
-
 }

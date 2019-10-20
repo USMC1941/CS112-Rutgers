@@ -4,7 +4,7 @@ import java.util.NoSuchElementException;
 
 public class Stack<T> {
 	Node<T> front;
-	int size;
+	int     size;
 
 	public Stack() {
 		front = null;
@@ -16,8 +16,7 @@ public class Stack<T> {
 		size++;
 	}
 
-	public T pop() 
-			throws NoSuchElementException {
+	public T pop() throws NoSuchElementException {
 		if (front == null) {
 			throw new NoSuchElementException();
 		}
@@ -39,5 +38,4 @@ public class Stack<T> {
 		front = null;
 		size = 0;
 	}
-
 }
