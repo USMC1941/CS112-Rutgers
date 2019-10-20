@@ -40,27 +40,27 @@ Node<Integer> newNode = new Node<>(6996, null);
 newNode.next = v.next;
 v.next = newNode;
 ```
-7. Deleting from Front
+6. Deleting from Front
 ```java
 front = front.next;
 ```
-8. Deleting Node from in between 2 nodes
+7. Deleting Node from in between 2 nodes
 ```java
 Node<Integer> oldNode = v.next;
 v.next = oldNode.next;
 ```
-10. Deleting LL with 1 node
+8. Deleting LL with 1 node
 ```java
 front = null;
 ```
-12. Traverse LL with `for` loop
+9. Traverse LL with `for` loop
 ```java
 for (Node<Integer> nextNode = front; nextNode != null; nextNode = nextNode.next) {
 	System.out.println(nextNode.data + " ");
 }
 System.out.println("Done");
 ```
-14. Traverse LL with `while` loop
+10. Traverse LL with `while` loop
 ```java
 Node<Integer> nextNode = front;
 while (nextNode != null) {
