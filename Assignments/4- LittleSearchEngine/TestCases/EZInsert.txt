@@ -1,0 +1,27 @@
+	ArrayList<Occurrence> arr = new ArrayList<Occurrence>();
+		arr.add(new Occurrence("a.txt", 82));
+		arr.add(new Occurrence("b.txt", 76));
+		arr.add(new Occurrence("c.txt", 71));
+		arr.add(new Occurrence("d.txt", 71));
+		arr.add(new Occurrence("e.txt", 70));
+		arr.add(new Occurrence("f.txt", 65));
+		arr.add(new Occurrence("g.txt", 61));
+		arr.add(new Occurrence("h.txt", 56));
+		arr.add(new Occurrence("i.txt", 54));
+		arr.add(new Occurrence("j.txt", 51));
+		arr.add(new Occurrence("k.txt", 48));
+		arr.add(new Occurrence("l.txt", 45));
+		arr.add(new Occurrence("m.txt", 41));
+		arr.add(new Occurrence("n.txt", 36));
+		arr.add(new Occurrence("o.txt", 34));
+		arr.add(new Occurrence("p.txt", 30));
+		arr.add(new Occurrence("q.txt", 25));
+		arr.add(new Occurrence("r.txt", 20));
+		arr.add(new Occurrence("s.txt", 20));
+		arr.add(new Occurrence("t.txt", 18));
+		arr.add(new Occurrence("u.txt", 17));
+		arr.add(new Occurrence("v.txt", 17));
+		arr.add(new Occurrence("w.txt", 14));
+		arr.add(new Occurrence("x.txt", 12));
+		
+		arr.add(new Occurrence("XOX.txt", 17)); //Term to sort!!
