@@ -1,0 +1,6 @@
+3
+sara|y|rutgers
+nick|y|penn state
+kaitlin|y|rutgers
+sara|nick
+nick|kaitlin

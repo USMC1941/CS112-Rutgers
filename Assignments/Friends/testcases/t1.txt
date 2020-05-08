@@ -1,0 +1,13 @@
+6
+A|n
+B|n
+C|n
+D|n
+E|n
+F|n
+A|B
+B|C
+B|E
+C|D
+D|E
+D|F
