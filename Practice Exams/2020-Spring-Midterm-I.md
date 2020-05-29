@@ -52,7 +52,7 @@ An m-ary tree is a tree in which every node has at most `m` children
 
    Here's an example 4-ary tree, with 3 keys in each node (although not shown, assume that all subtree pointers in the leaf nodes are null):
 
-   ![2020-Spring-Midterm-I-2b](img/2020-Spring-Midterm-I-2b.png)
+   ![2020-Spring-Midterm-I-2b](img/2020-Spring-Midterm-I-2b.jpg)
 
    A search for a target key, `kt`, proceeds as follows (recursive):
 
