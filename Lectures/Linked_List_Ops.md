@@ -31,11 +31,12 @@
 	front = new Node<>("Ben", null);
 	```
 4. Adding to End
-```java
-Node<Integer> newNode = new Node<>(6996, null);
-last.next = newNode;
-newNode = last;
-```
+   ```java
+   Node<Integer> newNode = new Node<>(6996, null);
+   last.next = newNode;
+   newNode = last;
+   ```
+
 5. Adding in between 2 Nodes
 	```java
 	Node<Integer> newNode = new Node<>(6996, null);
