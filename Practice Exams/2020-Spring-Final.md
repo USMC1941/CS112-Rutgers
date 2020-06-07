@@ -9,6 +9,7 @@
 ## Question 1: Quicksort [14 pts]
 
 Trace the quicksort algorithm on the following array, and show the full recursion tree, i.e. all splits, on the original array and all subarrays. Use the first item as the pivot when doing a split.
+
 ```
 24   6   72   28   12   9   3
 ```
@@ -24,15 +25,19 @@ If your algorithm is incorrect, you will get NO credit. If your algorithm is not
 ## Question 3: Dijkstra's Algorithm [14 pts]
 
 A weighted undirected graph has vertices `P`, `Q`, `X`, `Y`, `Z` and edges
+
 ```
 (X, Y, 2),(X, P, 3),(Y, Z, 6),(Y, P, 2),(Y, Q, 5),(P, Q, 3),(P, Z, 1)
 ```
+
 So, edge `x—y` has weight 2, edge `x—p` has weight 3, etc. Dijkstra's algorithm is run on this graph with `X` as the source vertex, using a min-heap for the fringe.
 
 Draw the fringe heap ordered array (NOT tree) for each iteration, just before a vertex is removed from the fringe. For each item in the heap ordered array, write the pair of (vertex name, distance from `X`) like this:
+
 ```
 [(v1, 3), (v2, 5), ...]
 ```
+
 where `(v1, 3)` is the root of the heap, `(v2, 5)` is the left child of `v1`, etc.
 
 Note: If you draw the heap tree instead of writing out the heap ordered array, you will get at most half the credit.
@@ -91,7 +96,7 @@ public class DirectedGraph {
 
 ## Question 7: Heap [14 pts; 4 + 10]
 
-Suppose that we have `k` max heaps, with `n` items in each.  We wish to combine these into a single max heap with `n * k` items in it.
+Suppose that we have `k` max heaps, with `n` items in each. We wish to combine these into a single max heap with `n * k` items in it.
 
 Each of the following parts 7a and 7b describes one approach to combining the heaps, for which you are asked to derive the worst case big O running time. You must show your derivation, detailing all the components first, then showing how they add up to the total running time.
 
@@ -105,4 +110,4 @@ If your answer is correct, but you do not show derivation, you will get 1 point.
 
 2. 7b
 
-   Group the `k` heaps into `k/2` pairs, and apply the algorithm from part 7a on each pair, thus getting `k/2` heaps.  Repeat this process until a single (final) heap remains. What is the worst-case big O running time? Show your derivation. Assume that `k` is a power of 2, and array allocation is `O(1)` time.
+   Group the `k` heaps into `k/2` pairs, and apply the algorithm from part 7a on each pair, thus getting `k/2` heaps. Repeat this process until a single (final) heap remains. What is the worst-case big O running time? Show your derivation. Assume that `k` is a power of 2, and array allocation is `O(1)` time.

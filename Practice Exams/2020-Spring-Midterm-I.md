@@ -37,7 +37,6 @@ public class BSTNode {
 }
 ```
 
-
 ### Question 2: M-ary Tree [14 pts]
 
 An m-ary tree is a tree in which every node has at most `m` children
