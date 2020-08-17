@@ -44,6 +44,7 @@ For the tree built in the above problem:
 ### Problem 2 Solution
 
 1. What is the worst case number of comparisons for a successful search in this tree? For an unsuccessful (failed) search? (Assume one comparison for equality check, and another to branch left or right.)
+
    **ANSWER**
 
    ```
@@ -66,6 +67,7 @@ For the tree built in the above problem:
    -  Failed search: 10 comparisons (search for 23 thru 39, or 41 thru 89 - these will end up in one of the lowest level leaf nodes marked 'F' in the tree above.
 
 2. What is the average case number of comparisons for a successful search in this tree?
+
    **ANSWER**
 
    Average case number of comparisons for successful search:
