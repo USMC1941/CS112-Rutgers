@@ -1,4 +1,4 @@
-# Problem Set 4 - Stack, Array List, Queue
+# Problem Set 4 - Stack, Array List, Queue Solution
 
 ## Problem 1
 

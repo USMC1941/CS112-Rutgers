@@ -1,4 +1,4 @@
-# Problem Set 2 - Linked Lists
+# Problem Set 2 - Linked Lists Solution
 
 ## Problem 1
 

@@ -1,4 +1,4 @@
-# Problem Set 3 - Linked Lists, Recursion
+# Problem Set 3 - Linked Lists, Recursion Solution
 
 ## Problem 1
 

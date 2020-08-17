@@ -1,4 +1,4 @@
-# Problem Set 1 - Big O
+# Problem Set 1 - Big O Solution
 
 ## Problem 1
 
@@ -19,7 +19,7 @@ An algorithm prints the following pattern:
 3. The number of lines printed in the preceding pattern is 5. Assume that the algorithm can extend this pattern for any number of lines (line number `i` has `i` stars). If the number of lines, `n` is the input to the algorithm, how many basic operations are performed as a function of `n`?
 4. Write your answer to the above question as a big O order.
 
-## Problem 1 Solution
+### Problem 1 Solution
 
 1. Printing a star, printing a blank space, printing a newline
 2. 15 print stars, 10 print blank spaces, 5 print newlines
@@ -39,7 +39,7 @@ Consider an algorithm that computes the total score on all exams for each studen
 3. What is the big O running time?
 4. Is your algorithm linear, quadratic, or some other order?
 
-## Problem 2 Solution
+### Problem 2 Solution
 
 1. Basic operations are addition and division.
 2. Each student total (which starts at zero) will be added to `c` times. Since there are `r` student totals, there are `r * c` additions for the totals. (An alternate correct answer is `r * (c - 1)` if you start the accumulator with the first item in a column, and perform `(c - 1)` additions.)
@@ -59,7 +59,7 @@ A card game program keeps a deck of cards in an array. Give an algorithm to "uns
 
 What is the worst case big O running time of your algorithm? What are the basic operations you used in your analysis? Is the average big O running time different from the worst case?
 
-## Problem 3 Solution
+### Problem 3 Solution
 
 Allocate four new arrays, each of length 13, one for each suit. Go through the original deck from front to end, and slot each card in its appropriate position in the suit array to which it belongs. So for example the queen of hearts will go to index position 11 in the hearts array. Note that since the indexes of the arrays are from 0 through 12, the array position of a card will be one less than its face value. (Queen's face value is 12, so its array position will be 11.)
 
