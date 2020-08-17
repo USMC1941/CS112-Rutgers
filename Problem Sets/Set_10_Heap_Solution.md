@@ -100,7 +100,7 @@ The total time for the inserts is also `O(n * logn)` by a similar argument. The 
 
 ## Problem 4
 
-Suppose you are given two heaps, stored in arrays. Write a method to merge them into a single heap, and return this heap. The original heaps are not modified:
+`*` Suppose you are given two heaps, stored in arrays. Write a method to merge them into a single heap, and return this heap. The original heaps are not modified:
 
 ```java
 public static <T extends Comparable<T>> T[] merge(T[] heap1, T[] heap2) {

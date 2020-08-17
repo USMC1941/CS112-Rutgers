@@ -37,7 +37,7 @@ What would be the worst case running time (big O) of this update process on a he
 
 ## Problem 4
 
-Suppose you are given two heaps, stored in arrays. Write a method to merge them into a single heap, and return this heap. The original heaps are not modified:
+`*` Suppose you are given two heaps, stored in arrays. Write a method to merge them into a single heap, and return this heap. The original heaps are not modified:
 
 ```java
 public static <T extends Comparable<T>> T[] merge(T[] heap1, T[] heap2) {
