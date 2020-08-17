@@ -2,9 +2,9 @@
 
 ## Problem 1
 
-`*` Answer the following questions in terms of h, the height of a binary tree:
+`*` Answer the following questions in terms of `h`, the height of a binary tree:
 
-1. What is the **minimum** possible number of nodes in a binary tree of height h?
+1. What is the **minimum** possible number of nodes in a binary tree of height `h`?
 2. A strictly binary tree is one in which every node has either no children or two children; in other words, there is **no** node that has exactly one child. What is the **minimum** possible number of nodes in a strictly binary tree of height `h`?
 3. A _complete_ binary tree is one in which every level **but** the last has the maximum number of nodes possible at that level; the last level may have any number of nodes. What is the **minimum** possible number of nodes in a complete binary tree of height `h`?
 
