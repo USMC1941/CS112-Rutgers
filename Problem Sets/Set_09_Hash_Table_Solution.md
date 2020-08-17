@@ -163,3 +163,67 @@ For each of these implementations:
 3. What would be the worst case time to print all words and their frequencies, in alphabetical order of the words?
 
 Assume there are `n` distinct words in the document, and a total of `m` words, and `m` is much greater than `n`.
+
+### Problem 4 Solution
+
+Implementation Process:
+
+1. Hash table: For each word, hash and search in the chain at that location. If word already exists, then increment frequency by 1, otherwise add it with frequency 1. (So key is word, and value is frequency.)
+2. AVL tree: Tree ordering is alphabetical on words. (In other words, search compares words, and each node in the tree has a word and its frequency.) For each word, search for it in the tree. If it exists, increment its frequency by 1, otherwise add it with frequency 1.
+
+Running times:
+
+1. Populating the data structure
+
+   1. Hash table:
+
+      In the worst case, all words hash to the same location, giving a chain of length `n`. In order to push the running time to the worst possible, the scenario to consider is when the first `n` words in the document are the distinct words, and the following (`m - n`) words are duplicates of the first `n`
+
+      To add the first `n` words would take time:
+
+      ```
+      1 + 2 + 3 + ... + n = O(n^2)
+      ```
+
+      Since a word is first searched to see if it exists, and a worst case search will be all the way down the chain, the first and add takes 1 unit of time, the second takes 2 units, etc.
+
+      The subsequent `m - n` words would each be searched on a chain of length `n`, with the worst case search running all the way through the chain, for `n` units of time. So this would amount of a time of `(m - n) * n`. Since `m` is much greater than `n`, this amounts to `O(mn)` time.
+
+      So the total time is:
+
+      ```
+      O(n^2) + O(mn)
+      ```
+
+      and again, since `m` much greater than `n`, this simplifies to
+
+      ```
+      O(mn)
+      ```
+
+   2. AVL Tree:
+
+      With the same scenario for the worst case as above (distinct words all up front):
+
+      The first `n` inserts would take time:
+
+      ```
+      log 1 + log 2 + log 3 ... + log n = log (n!)
+      ```
+
+      There's a math quantity called Stirling's formula that says `n!` is approximately equal to `(n/2)^(n/2)`:
+
+      ```
+      log (n!) is approximately = log ((n/2)^(n/2)) = O(n log n)
+      ```
+
+      The subsequent (`m-n`) searches would in the worst case take `O(log n)` time each, and since `m` is much greater than `n`, this results in `O(m log n)` time
+
+2. Looking up the frequency of a word
+
+   1. Hash table: `O(n)`, since the longest chain is of length `n`
+   2. AVL Tree: `O(log n)`, since the height of the tree is `O(log n)`
+
+3. Printing words, frequencies in alphabetical order of words
+   1. Hash table: Since there is no relative ordering of the words in the hash table, all the words need to be retrieved (with their frequencies), then sorted. The retrieval will take `O(n)` time, and the sorting will take `O(nlog n)` time (using mergesort, for example). So the total time is `O(nlog n)`.
+   2. AVL tree: Since the tree is already ordered alphabetically by words, an inorder traversal will do the trick, in only `O(n)` time.
