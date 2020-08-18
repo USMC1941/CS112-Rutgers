@@ -274,7 +274,7 @@ Derive the worst case big O running time of the algorithm that drives your algor
 
    Dominant operations are `enqueue` and `dequeue`. Every item is enqueued twice and dequeued twice. For a queue of size `n`, this adds up to `4n` operations, which is `O(n)` time.
 
-   2. Version 2, using `size()` method, no scratch queue needed.
+2. Version 2, using `size()` method, no scratch queue needed.
 
    ```java
    // returns the item at the front of the given queue, without
