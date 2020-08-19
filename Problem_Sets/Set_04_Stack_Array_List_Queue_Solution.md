@@ -258,7 +258,7 @@ Derive the worst case big O running time of the algorithm that drives your algor
       }
       T result = q.dequeue();
 
-      Queue<T> temp = new Queue<T>();
+      Queue<T> temp = new Queue<>();
       temp.enqueue(result);
 
       while (!q.isEmpty()) {

@@ -38,7 +38,6 @@ public boolean delete(String target) {
 
 ```java
 public boolean delete(String target) {
-
    if (rear == null) { // list is empty
       return false;
    }
@@ -56,7 +55,7 @@ public boolean delete(String target) {
    Node prev = rear, curr = rear.next;
    do {
       if (target.equals(curr.data)) {
-          prev.next = curr.next;
+         prev.next = curr.next;
          if (curr == rear) { // if curr is last node, prev becomes new last node
             rear = prev;
          }

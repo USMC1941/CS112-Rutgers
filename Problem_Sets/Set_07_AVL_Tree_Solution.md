@@ -97,9 +97,9 @@ Given the following AVL tree:
 1. Determine the height of the subtree rooted at each node in the tree.
 2. Determine the balance factor of each node in the tree.
 3. Show the resulting AVL tree after each insertion in the following sequence: (In all AVL trees you show, mark the balance factors next to the nodes.)
-   -  Insert Z
-   -  Insert P
-   -  Insert A
+   -  Insert `Z`
+   -  Insert `P`
+   -  Insert `A`
 
 ### Problem 3 Solution
 
@@ -124,7 +124,7 @@ Given the following AVL tree:
 
 3:
 
--  After Inserting Z:
+-  After Inserting `Z`:
 
    ```
                                 ---J---
@@ -138,9 +138,9 @@ Given the following AVL tree:
                                       O   S
    ```
 
-   Only the balance factors of Z and X are changed; others remain the same
+   Only the balance factors of `Z` and `X` are changed; others remain the same
 
--  After inserting P (in the tree above):
+-  After inserting `P` (in the tree above):
 
    ```
                                 ---J---
@@ -164,7 +164,7 @@ Given the following AVL tree:
 
    Rebalancing at N is Case 2.
 
-   -  First, rotate O-Q
+   -  First, rotate `O-Q`
 
       ```
                                 ---J---
@@ -180,7 +180,7 @@ Given the following AVL tree:
                                        - P  S
       ```
 
-   -  Then, rotate O-N
+   -  Then, rotate `O-N`
 
       ```
                                 ---J---
@@ -194,7 +194,7 @@ Given the following AVL tree:
                                  -L  - P  S
       ```
 
-   -  After inserting A (in the tree above):
+   -  After inserting `A` (in the tree above):
 
       ```
                                 ---J---
@@ -214,9 +214,9 @@ Given the following AVL tree:
       -  Back up to `C` and set bf to `'/'`
       -  Back up to `F` and stop. `F` is unbalanced, so rebalance at `F`.
 
-      Rebalancing at F is Case 1.
+      Rebalancing at `F` is Case 1.
 
-      -  Rotate C-F
+      -  Rotate `C-F`
 
          ```
                              ---J---
@@ -244,19 +244,19 @@ What is the total units of work performed to get to the final AVL tree, counting
 
 ### Problem 4 Solution
 
-Since the tree allows duplicate keys, only one comparison is needed at every node to turn right (>) or left (not >, i.e. <=) when descending to insert.
+Since the tree allows duplicate keys, only one comparison is needed at every node to turn right (`>`) or left (not `>`, i.e. `<=`) when descending to insert.
 
--  To insert 1: 0 units
+-  To insert `1`: 0 units
    ```
      1
    ```
--  To insert 2: 1 comparison + 1 pointer assignment = 2 units
+-  To insert `2`: 1 comparison + 1 pointer assignment = 2 units
    ```
      1
       \
        2
    ```
--  To insert 5: 2 comparisons + 1 pointer assignment:
+-  To insert `5`: 2 comparisons + 1 pointer assignment:
 
    ```
      1
@@ -266,13 +266,13 @@ Since the tree allows duplicate keys, only one comparison is needed at every nod
          5
    ```
 
-   Then rotation at 2-1, with 3 pointer assignments:
+   Then rotation at `2-1`, with 3 pointer assignments:
 
    ```
    root=2, 2.left=1, 1.right=null
    ```
 
-   Total: 2 + 1 + 3 = 6 units, resulting in this tree:
+   Total: `2 + 1 + 3 = 6` units, resulting in this tree:
 
    ```
      2
@@ -280,7 +280,7 @@ Since the tree allows duplicate keys, only one comparison is needed at every nod
    1   5
    ```
 
--  To insert 3: 2 comparisons + 1 pointer assignment = 3 units:
+-  To insert `3`: 2 comparisons + 1 pointer assignment = 3 units:
    ```
      2
     / \
@@ -288,7 +288,7 @@ Since the tree allows duplicate keys, only one comparison is needed at every nod
       /
      3
    ```
--  To insert 4: 3 comparisons + 1 pointer assignment:
+-  To insert `4`: 3 comparisons + 1 pointer assignment:
 
    ```
      2
@@ -300,7 +300,7 @@ Since the tree allows duplicate keys, only one comparison is needed at every nod
        4
    ```
 
-   Then a rotation at 4-3, with 3 pointer assignments:
+   Then a rotation at `4-3`, with 3 pointer assignments:
 
    ```
      2
@@ -312,7 +312,7 @@ Since the tree allows duplicate keys, only one comparison is needed at every nod
    3
    ```
 
-   And a rotation at 4-5, with 3 pointer assignments:
+   And a rotation at `4-5`, with 3 pointer assignments:
 
    ```
      2

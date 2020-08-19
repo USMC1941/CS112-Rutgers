@@ -31,7 +31,6 @@ public class BTNode<T> {
       this.right = right;
    }
 }
-
 ```
 
 ## Problem 3

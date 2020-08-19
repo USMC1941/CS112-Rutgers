@@ -66,9 +66,9 @@ Given the following AVL tree:
 1. Determine the height of the subtree rooted at each node in the tree.
 2. Determine the balance factor of each node in the tree.
 3. Show the resulting AVL tree after each insertion in the following sequence: (In all AVL trees you show, mark the balance factors next to the nodes.)
-   -  Insert Z
-   -  Insert P
-   -  Insert A
+   -  Insert `Z`
+   -  Insert `P`
+   -  Insert `A`
 
 ## Problem 4
 

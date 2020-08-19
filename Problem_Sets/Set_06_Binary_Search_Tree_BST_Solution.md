@@ -134,7 +134,6 @@ public class BST<T extends Comparable<T>> {
    // ...
 
    public void insert(T target) throws IllegalArgumentException {
-
       BSTNode<T> ptr = root, prev = null;
       int        c   = 0;
       while (ptr != null) {
@@ -178,7 +177,6 @@ public class BST<T extends Comparable<T>> {
    }
 
    private BSTNode<T> insert(T target, BSTNode<T> root) throws IllegalArgumentException {
-
       if (root == null) {
          return new BSTNode<>(target);
       }
