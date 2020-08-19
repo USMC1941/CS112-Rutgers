@@ -21,16 +21,16 @@ Given the following sequence of integers:
 
 ### Problem 1 Solution
 
--  In a sequential search of a list, it takes one comparison to succeed at the first element, two comparisons to succeed the second element, and so on. In general it takes i comparisons to succeed at the `i`-th element. With the assumption that all entries are searched with equal probability, the formula is:
+1.  In a sequential search of a list, it takes one comparison to succeed at the first element, two comparisons to succeed the second element, and so on. In general it takes `i` comparisons to succeed at the `i`-th element. With the assumption that all entries are searched with equal probability, the formula is:
    ```
    (1 + 2 + 3 + 4 + ... + n) / n = n * (n + 1) / (2 * n) = (n + 1) / 2 = (9 + 1) / 2 = 5
    ```
--  If the search probabilities are changed according to the given example, the average # of comparisons should be computed as follows:
+2.  If the search probabilities are changed according to the given example, the average # of comparisons should be computed as follows:
    ```
    0.1 * 1 + 0.3 * 2 + 0.05 * 3 + 0.2 * 4 +
    0.05 * 5 + 0.1 * 6 + 0.05 * 7 + 0.1 * 8 + 0.05 * 9 = 4.1
    ```
--  We should rearrange the entries such that entries with high search probabilities come first in the list. For example the entry "9" should be the first item since it has the highest search probability. Following this procedure, the new list should be arranged like this:
+3.  We should rearrange the entries such that entries with high search probabilities come first in the list. For example the entry "9" should be the first item since it has the highest search probability. Following this procedure, the new list should be arranged like this:
    ```
    9 15 {3,5,18} {2,-5,7,8}
    ```

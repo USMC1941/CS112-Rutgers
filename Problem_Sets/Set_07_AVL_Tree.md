@@ -26,7 +26,6 @@ public class BSTNode<T extends Comparable> {
    public static <T extends Comparable> void fillHeights(BSTNode<T> root) {
       // COMPLETE THIS METHOD
    }
-
 }
 ```
 

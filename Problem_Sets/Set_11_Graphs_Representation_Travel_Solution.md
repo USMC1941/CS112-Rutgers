@@ -8,7 +8,7 @@ Suppose a weighted undirected graph has `n` vertices and `e` edges. The weights 
 
 Space for adjacency matrix (`AMAT`) is `n^2`. Space for adjacency linked lists (`ALL`) is `n + 3 * 2e = n + 6e`. (Each node needs 3 units of space: 1 for the neighbor number, 1 for the edge weight, and 1 for the next node reference. And there are `2e` nodes.) The space required by `AMAT` and `ALL` is the same when `n^2 = n + 6e`, i.e. when `e = (n^2 - n)/6`.
 
-The minimum value of `e` for which the adjacency matrix representation would require less space than the adjacency linked lists representation is one more than the `e` above, which would be `(n^2 - n)/(6+1)`.
+The minimum value of `e` for which the adjacency matrix representation would require less space than the adjacency linked lists representation is one more than the `e` above, which would be `(n^2 - n)/(6 + 1)`.
 
 ## Problem 2
 
@@ -22,7 +22,7 @@ Implement a method that would return the complement of the undirected graph on w
 
 ```java
 class Edge {
-   int vnum;
+   int  vnum;
    Edge next;
 }
 ```
@@ -124,7 +124,7 @@ Implement the method `hasPath` in the following. Use additional class fields/hel
 
 ```java
 public class Neighbor {
-   public int vertex;
+   public int      vertex;
    public Neighbor next;
    // ...
 }

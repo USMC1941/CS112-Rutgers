@@ -12,11 +12,13 @@
 
 1. `h + 1` - one node at every level, and there are (`h + 1`) levels (levels are numbered `0, 1, ..., h`)
 2. Every level except the root level has 2 nodes. So, `1 + 2 * h`
-3. Level 0 has `2^0` nodes, level 1 has `2^1` nodes, and so on. Level `h - 1` has `2^(h- 1)` nodes. The last level has one node. The total is `2^h - 1 + 1 = 2^h`.
+3. Level 0 has `2^0` nodes, level 1 has `2^1` nodes, and so on. Level `h - 1` has `2^(h- 1)` nodes. The last level has one node.
+   
+   The total is `2^h - 1 + 1 = 2^h`.
 
 ## Problem 2
 
-Two binary trees are _isomorphic_ if they have the same shape (i.e. they have identical structures.) Implement the following **recursive** method:
+Two binary trees are _isomorphic_ if they have the same shape (i.e. they have identical structures). Implement the following **recursive** method: 
 
 ```java
 public static <T> boolean isomorphic(BTNode<T> T1, BTNode<T> T2) {

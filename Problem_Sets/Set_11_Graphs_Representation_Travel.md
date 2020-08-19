@@ -16,7 +16,7 @@ Implement a method that would return the complement of the undirected graph on w
 
 ```java
 class Edge {
-   int vnum;
+   int  vnum;
    Edge next;
 }
 ```
@@ -53,7 +53,7 @@ Implement the method `hasPath` in the following. Use additional class fields/hel
 
 ```java
 public class Neighbor {
-   public int vertex;
+   public int      vertex;
    public Neighbor next;
    // ...
 }

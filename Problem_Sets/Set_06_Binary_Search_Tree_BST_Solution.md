@@ -135,8 +135,8 @@ public class BST<T extends Comparable<T>> {
 
    public void insert(T target) throws IllegalArgumentException {
 
-      BSTNode ptr = root, prev = null;
-      int     c   = 0;
+      BSTNode<T> ptr = root, prev = null;
+      int        c   = 0;
       while (ptr != null) {
          c = target.compareTo(ptr.data);
          if (c == 0) {
@@ -145,7 +145,7 @@ public class BST<T extends Comparable<T>> {
          prev = ptr;
          ptr = c < 0 ? ptr.left : ptr.right;
       }
-      BSTNode tmp = new BSTNode(target);
+      BSTNode<T> tmp = new BSTNode<>(target);
       size++;
       if (root == null) {
          root = tmp;
@@ -154,7 +154,7 @@ public class BST<T extends Comparable<T>> {
       if (c < 0) {
          prev.left = tmp;
       }
-      else {
+      else if (prev != null) {
          prev.right = tmp;
       }
    }
@@ -167,16 +167,20 @@ Write a recursive version of this method, using a helper method if necessary.
 
 ```java
 public class BST<T extends Comparable<T>> {
+   BSTNode<T> root;
+   int        size;
+
+   // ...
 
    public void insert(T target) throws IllegalArgumentException {
       root = insert(target, root);
       size++;
    }
 
-   private BSTNode<T> insert(T target, BST<T> root) throws IllegalArgumentException {
+   private BSTNode<T> insert(T target, BSTNode<T> root) throws IllegalArgumentException {
 
       if (root == null) {
-         return new BSTNode(target);
+         return new BSTNode<>(target);
       }
 
       int c = target.compareTo(root.data);

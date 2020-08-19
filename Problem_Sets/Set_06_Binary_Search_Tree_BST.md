@@ -55,8 +55,8 @@ public class BST<T extends Comparable<T>> {
 
    public void insert(T target) throws IllegalArgumentException {
 
-      BSTNode ptr = root, prev = null;
-      int     c   = 0;
+      BSTNode<T> ptr = root, prev = null;
+      int        c   = 0;
       while (ptr != null) {
          c = target.compareTo(ptr.data);
          if (c == 0) {
@@ -65,7 +65,7 @@ public class BST<T extends Comparable<T>> {
          prev = ptr;
          ptr = c < 0 ? ptr.left : ptr.right;
       }
-      BSTNode tmp = new BSTNode(target);
+      BSTNode<T> tmp = new BSTNode<>(target);
       size++;
       if (root == null) {
          root = tmp;
@@ -74,7 +74,7 @@ public class BST<T extends Comparable<T>> {
       if (c < 0) {
          prev.left = tmp;
       }
-      else {
+      else if (prev != null) {
          prev.right = tmp;
       }
    }

@@ -73,7 +73,7 @@ public boolean delete(String target) {
 
 ## Problem 2
 
-`*` Implement a method in the circular linked list class of problem 1, to add a new item _after_ the first occurrence (from the front) of a specified item. If the item does not exist in the list, the method should return false, otherwise true.
+`*` Implement a method in the circular linked list class of Problem 1, to add a new item _after_ the first occurrence (from the front) of a specified item. If the item does not exist in the list, the method should return `false`, otherwise `true`.
 
 ```java
 public boolean addAfter(String newItem, String afterItem) {

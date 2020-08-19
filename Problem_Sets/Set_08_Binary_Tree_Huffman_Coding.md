@@ -10,7 +10,7 @@
 
 ## Problem 2
 
-Two binary trees are _isomorphic_ if they have the same shape (i.e. they have identical structures.) Implement the following **recursive** method:
+Two binary trees are _isomorphic_ if they have the same shape (i.e. they have identical structures). Implement the following **recursive** method:
 
 ```java
 public static <T> boolean isomorphic(BTNode<T> T1, BTNode<T> T2) {

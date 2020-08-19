@@ -26,7 +26,7 @@ public class Stack<T> {
 }
 ```
 
-Implement the following "client" method (i.e. _not_ in the Stack class, but in the program that uses a stack):
+Implement the following "client" method (i.e. _not_ in the `Stack` class, but in the program that uses a stack):
 
 ```java
 public static <T> int size(Stack<T> S) {

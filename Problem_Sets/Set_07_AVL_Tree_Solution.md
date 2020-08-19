@@ -26,7 +26,6 @@ public class BSTNode<T extends Comparable> {
    public static <T extends Comparable> void fillHeights(BSTNode<T> root) {
       // COMPLETE THIS METHOD
    }
-
 }
 ```
 
@@ -34,7 +33,7 @@ public class BSTNode<T extends Comparable> {
 
 ```java
 // Recursively fills height values at all nodes of a binary tree
-public static <T extends Comparable> void fillHeights(BSTNode root) {
+public static <T extends Comparable> void fillHeights(BSTNode<T> root) {
    if (root == null) {
       return;
    }
