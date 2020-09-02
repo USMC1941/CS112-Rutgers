@@ -80,8 +80,8 @@ If you wish to change Polytest, feel free. You will not be submitting it, and we
 
 Observe the following rules while working on `Polynomial.java`:
 
--  Only fill in the code in the methods add, multiply, and evaluate where indicated.
--  In methods that return a `Polynomial` (add and multiply), the polynomial that is returned must be represented as described in the [Notes about representation](#notes-about-representation) part of the [Background](#background) section above.
+-  Only fill in the code in the methods `add`, `multiply`, and evaluate where indicated.
+-  In methods that return a `Polynomial` (`add` and `multiply`), the polynomial that is returned must be represented as described in the [Notes about representation](#notes-about-representation) part of the [Background](#background) section above.
 -  Your method will not get credit if the returned polynomial does not adhere to this representation, even it is mathematically correct. Also see the [Notes about empty (zero) polynomials](#notes-about-empty-zero-polynomials) at the end of the [Running the program](#running-the-program) section below.
 -  DO NOT remove the package line at the top of the file.
 -  DO NOT remove any of the import statements.
@@ -197,7 +197,7 @@ The sample tests we have given you are just for starters. You will need to creat
 
 ### Note on translation from internal to output representation
 
-The `toString` method in the `Polynomial` class returns a string with the terms in descending order, fit for printing. (It processes the ascending ordered terms of the input linked list in reverse order.) For illustration, see how the add method in `Polytest` prints the resulting polynomial:
+The `toString` method in the `Polynomial` class returns a string with the terms in descending order, fit for printing. (It processes the ascending ordered terms of the input linked list in reverse order.) For illustration, see how the `add` method in `Polytest` prints the resulting polynomial:
 
 ```java
 System.out.println("Sum: " + Polynomial.toString(Polynomial.add(poly1, poly2)) + "\n");
@@ -217,12 +217,11 @@ Submit your `Polynomial.java` source file.
 
 ## Grading Process
 
--  Your code will be auto-graded by a grading program (grader), that will run several test cases on each of evaluate, add, and multiply.
+-  Your code will be auto-graded by a grading program (grader), that will run several test cases on each of `evaluate`, `add`, and `multiply`.
 -  We will not accept requests to grade any other submission other than the latest submission.
+-  For each test case, the result computed by your code will be compared with that computed by our correct code. Each test case is a unit of partial credit, so credits for a method are accumulated one test case at a time. There is no partial credit within a test case: either your program works on a test case (full credit for that test case), or it doesn't (no credit for that test case.)
 
-   For each test case, the result computed by your code will be compared with that computed by our correct code. Each test case is a unit of partial credit, so credits for a method are accumulated one test case at a time. There is no partial credit within a test case: either your program works on a test case (full credit for that test case), or it doesn't (no credit for that test case.)
-
-   Note that for the `add` `and` `multiply` methods, the auto-grader will examine the resulting linked list, NOT printed output. (The auto-grader does NOT use `Polytest` at all - that is just for your use.) In other words, the grading script will compare the linked list structure of the correct result with the linked list structure in your implementation. For evaluate, the returned float value will be checked.
+   Note that for the `add` `and` `multiply` methods, the auto-grader will examine the resulting linked list, NOT printed output. (The auto-grader does NOT use `Polytest` at all - that is just for your use.) In other words, the grading script will compare the linked list structure of the correct result with the linked list structure in your implementation. For `evaluate`, the returned float value will be checked.
 
    If you call the `add` method in your `multiply` implementation, be aware that if your `add` implementation does not work correctly, your `multiply` method's correctness will be adversely impacted as well, and you will lose credit for it as well for the failed test cases.
 
