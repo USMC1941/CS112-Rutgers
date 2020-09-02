@@ -1,4 +1,4 @@
-# Programming Assignment - Friendship Graph Algorithms Test Cases
+# Programming Assignment Friendship Graph Algorithms - Test Cases
 
 ## `shortestChain`: 35 pts
 

@@ -1,4 +1,4 @@
-# Programming Assignment - Little Search Engine Test Cases
+# Programming Assignment Little Search Engine - Test Cases
 
 ## getKeyword (pts: 3,3,3,2,2)
 
