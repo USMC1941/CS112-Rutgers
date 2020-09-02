@@ -120,10 +120,10 @@ Note that the graph may not be connected, as seen in this example in which there
 
    For example, `v=jane`, `x=sam`, and `w=bob`.
 
-   Finding all connectors in an undirected graph can be done using DFS (depth-first search), by keeping track of two additional quantities for every vertex v. These are:
+   Finding all connectors in an undirected graph can be done using DFS (depth-first search), by keeping track of two additional quantities for every vertex `v`. These are:
 
    -  `dfsnum(v)`: This is the dfs number, assigned when a vertex is visited, dealt out in increasing order.
-   -  `back(v)`: This is a number that is initially assigned when a vertex is visited, and is equal to dfsnum, but can be changed later as follows:
+   -  `back(v)`: This is a number that is initially assigned when a vertex is visited, and is equal to `dfsnum`, but can be changed later as follows:
       -  When the DFS backs up from a neighbor, `w`, to `v`, if `dfsnum(v) > back(w)`, then `back(v)` is set to `min(back(v),back(w))`
       -  If a neighbor, `w`, is already visited then `back(v)` is set to `min(back(v),dfsnum(w))`
 
@@ -343,7 +343,7 @@ You will complete the following static methods in the `Friends` class, to implem
    -  Input: Name of school for which cliques are to be found, e.g. `"rutgers"`
    -  Result: The names of people in each of the cliques, in any order, returned in an array list of array lists. Moreover, the cliques themselves could be in any order in the top level array list.
 
-      For the example cited in the `Cliques` part of the [Algorithms](#algorithms) section above, with input `rutgers`, the result is:
+      For the example cited in the `Cliques` part of the [`Algorithms`](#algorithms) section above, with input `rutgers`, the result is:
 
       ```
       [[sam,jane,bob,kaitlin],[sergei,aparna]]
