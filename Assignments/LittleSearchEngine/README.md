@@ -2,8 +2,6 @@
 
 In this assignment you will implement a simple search engine for text documents using hash tables.
 
-Worth 100 points = 10% of your course grade
-
 ## Rules
 
 -  You will work on this assignment individually. Read the [DCS Academic Integrity Policy for Programming Assignments](http://www.cs.rutgers.edu/academics/undergraduate/academic-integrity-policy/programming-assignments) - you are responsible for abiding by the policy. In particular, note that "**All Violations of the Academic Integrity Policy will be reported by the instructor to the appropriate Dean**".
