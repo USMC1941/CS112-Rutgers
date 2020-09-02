@@ -8,6 +8,7 @@ Worth 100 points = 10% of your course grade
 
 -  You will work on this assignment individually. Read the [DCS Academic Integrity Policy for Programming Assignments](https://www.cs.rutgers.edu/academics/undergraduate/academic-integrity-policy/programming-assignments) - you are responsible for abiding by the policy. In particular, note that "**All Violations of the Academic Integrity Policy will be reported by the instructor to the appropriate Dean**".
 -  **IMPORTANT - READ THE FOLLOWING CAREFULLY!!!**
+
    Assignments emailed to the instructor or TAs will be ignored--they will NOT be accepted for grading. We will only grade submissions in Autolab.
 
    If your program does not compile, you will not get any credit.
@@ -200,23 +201,23 @@ Note that the graph may not be connected, as seen in this example in which there
 
       ```
       dfs @ A 1/1
-            dfs @ B 2/2
-               dfs @ E 3/3
-                  dfs @ D 4/4
-                        dfs @ F 5/5
-                           nbr D is already visited => F 5/4
-                        dfsnum(D) <= back(F) [D is a CONNECTOR]
-                        nbr E already visited => D 4/3
-                        dfs @ C 6/6
-                           nbr D already visited => C 6/4
-                           nbr B already visited => C 6/2
-                        dfsnum(D) > back(C) => D 4/2
-                  dfsnum(E) > back(D) => E 3/2
-                  nbr B is already visited => E 3/2
-               dfsnum(B) <= back(E) [B is a CONNECTOR]
-               nbr C is already visited => B 2/2
-               nbr A is already visited => B 2/1
-            dfsnum(A) <= back(B) [A is starting point, NOT a connector in this case]
+         dfs @ B 2/2
+            dfs @ E 3/3
+               dfs @ D 4/4
+                  dfs @ F 5/5
+                     nbr D is already visited => F 5/4
+                  dfsnum(D) <= back(F) [D is a CONNECTOR]
+                  nbr E already visited => D 4/3
+                  dfs @ C 6/6
+                     nbr D already visited => C 6/4
+                     nbr B already visited => C 6/2
+                  dfsnum(D) > back(C) => D 4/2
+               dfsnum(E) > back(D) => E 3/2
+               nbr B is already visited => E 3/2
+            dfsnum(B) <= back(E) [B is a CONNECTOR]
+            nbr C is already visited => B 2/2
+            nbr A is already visited => B 2/1
+         dfsnum(A) <= back(B) [A is starting point, NOT a connector in this case]
       ```
 
    -  Example 4: (`B` and `D` are connectors)
@@ -242,22 +243,22 @@ Note that the graph may not be connected, as seen in this example in which there
 
       ```
       dfs @ D 1/1
-            dfs @ C 2/2
-               dfs @ B 3/3
-                  dfs @ A 4/4
-                        nbr B is already visited => A 4/3
-                  dfsnum(B) <= back(A) [B is a CONNECTOR]
-                  nbr C is already visited => B 3/2
-                  dfs @ E 5/5
-                        nbr B is already visited => E 5/3
-                        nbr D is already visited => E 5/1
-                  dfsnum(B) > back(E) => B 3/1
-               dfsnum(C) > back(B) => C 2/1
-               nbr D is already visited => C 2/1
-            dfsnum(D) <= back(C) [D is starting point, NOT connector]
-            dfs @ F 6/6
-               nbr D is already visited => F 6/1
-            dfsnum(D) <= back(F) [D is starting point, is a CONNECTOR]
+         dfs @ C 2/2
+            dfs @ B 3/3
+               dfs @ A 4/4
+                  nbr B is already visited => A 4/3
+               dfsnum(B) <= back(A) [B is a CONNECTOR]
+               nbr C is already visited => B 3/2
+               dfs @ E 5/5
+                  nbr B is already visited => E 5/3
+                  nbr D is already visited => E 5/1
+               dfsnum(B) > back(E) => B 3/1
+            dfsnum(C) > back(B) => C 2/1
+            nbr D is already visited => C 2/1
+         dfsnum(D) <= back(C) [D is starting point, NOT connector]
+         dfs @ F 6/6
+            nbr D is already visited => F 6/1
+         dfsnum(D) <= back(F) [D is starting point, is a CONNECTOR]
       ```
 
 ## Implementation
