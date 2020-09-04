@@ -102,12 +102,12 @@ For the purpose of this assignment, you may use `StringTokenizer` without issue.
 
 Or, you may simply parse the expression by scanning it a character at a time.
 
-### Rules of implementation!:
+### Rules of implementation
 
 -  You may NOT modify any of the files except `Expression.java` in ANY way.
 -  You may NOT make ANY modifications to `Expression.java` EXCEPT:
    -  Write in the bodies of the methods you are asked to implement,
-   -  Add private helper methods as needed (including the recursive evaluate method discussed below.)
+   -  Add private helper methods as needed (including the recursive `evaluate` method discussed below.)
 
 Note that the `java.io.*`, `java.util.*`, and `java.util.regex.*` import statements at the top of the file allow for using ANY class in `java.io`, `java.util`, and `java.util.regex` without additional specification or qualification.
 
