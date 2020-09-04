@@ -26,7 +26,7 @@ Read Section 3.1 in the textbook for background on polynomials and polynomial ar
 
 A polynomial may be represented using a linked list as follows: for every term in the polynomial there is one entry in the linked list consisting of the term's coefficient and degree. The entries are ordered according to ASCENDING values of degree, i.e. lowest degree term first, then next lowest degree term and so on, all the way up to the highest degree term. IMPORTANT: Zero-coefficient terms are NOT stored.
 
-For example, the following polynomial (the symbol '^' is used to mean 'raised to the power'):
+For example, the following polynomial (the symbol `'^'` is used to mean 'raised to the power'):
 
 ```
 4x^5 - 2x^3 + 2x +3

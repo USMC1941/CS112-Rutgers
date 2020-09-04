@@ -1,4 +1,4 @@
-# Programming Assignment Polynomials - Test Cases
+# Programming Assignment Polynomial - Test Cases
 
 ## Test cases for method evaluate:
 
