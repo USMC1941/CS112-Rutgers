@@ -1,4 +1,4 @@
-# Programming Assignment 2 - Expression Evaluation
+# Programming Assignment - Expression Evaluation
 
 In this assignment you will implement a program to evaluate an arithmetic expression
 
