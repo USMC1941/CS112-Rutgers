@@ -66,7 +66,7 @@
 
 5. Get Key
 
-   Tested with 4 test cases, where the value of the first card is 28, 27, and 1 for the first 3 cases, and the last one requires one repetition of getKey.
+   Tested with 4 test cases, where the value of the first card is 28, 27, and 1 for the first 3 cases, and the last one requires one repetition of `getKey`.
 
    | Points |                                 Tested Input                                 | Expected Key |
    | :----: | :--------------------------------------------------------------------------: | :----------: |
