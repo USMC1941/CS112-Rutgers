@@ -1,21 +1,20 @@
 package search;
 
-import java.io.*;
+import java.io.IOException;
 
 public class Driver {
 
-    public static void main(String args[]) throws IOException {
-        String docsFile = "docs.txt";
-        String noiseWords = "noisewords.txt";
+   public static void main(String[] args) throws IOException {
+      String docsFile   = "docs.txt";
+      String noiseWords = "noisewords.txt";
 
-        LittleSearchEngine searchEngine = new LittleSearchEngine();
+      LittleSearchEngine searchEngine = new LittleSearchEngine();
 
-        searchEngine.makeIndex(docsFile, noiseWords);
+      searchEngine.makeIndex(docsFile, noiseWords);
 
-        String kw1 = "deep";
-        String kw2 = "world";
+      String kw1 = "deep";
+      String kw2 = "world";
 
-        System.out.println(searchEngine.top5search(kw1, kw2));
-
-    }
+      System.out.println(searchEngine.top5search(kw1, kw2));
+   }
 }
