@@ -1,4 +1,4 @@
-package search;
+package lse;
 
 import java.io.IOException;
 

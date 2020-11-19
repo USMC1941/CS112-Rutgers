@@ -1,51 +1,12 @@
-package search;
+package lse;
 
 import java.io.*;
 import java.util.*;
 
 /**
- * This class encapsulates an occurrence of a keyword in a document. It stores the
- * document name, and the frequency of occurrence in that document. Occurrences are
- * associated with keywords in an index hash table.
- *
- * @author Sesh Venugopal
- *
- */
-class Occurrence {
-   /**
-    * Document in which a keyword occurs.
-    */
-   String document;
-
-   /**
-    * The frequency (number of times) the keyword occurs in the above document.
-    */
-   int frequency;
-
-   /**
-    * Initializes this occurrence with the given document,frequency pair.
-    *
-    * @param doc Document name
-    * @param freq Frequency
-    */
-   public Occurrence(String doc, int freq) {
-      document = doc;
-      frequency = freq;
-   }
-
-   /* (non-Javadoc)
-    * @see java.lang.Object#toString()
-    */
-   public String toString() {
-      return "(" + document + "," + frequency + ")";
-   }
-}
-
-/**
  * This class builds an index of keywords. Each keyword maps to a set of documents in
  * which it occurs, with frequency of occurrence in each document. Once the index is built,
  * the documents can searched on for keywords.
- *
  */
 public class LittleSearchEngine {
 
@@ -75,7 +36,7 @@ public class LittleSearchEngine {
     * each of which is associated with an array list of Occurrence objects, arranged
     * in decreasing frequencies of occurrence.
     *
-    * @param docsFile Name of file that has a list of all the document file names, one name per line
+    * @param docsFile       Name of file that has a list of all the document file names, one name per line
     * @param noiseWordsFile Name of file that has a list of noise words, one noise word per line
     * @throws FileNotFoundException If there is a problem locating any of the input files on disk
     */
@@ -159,7 +120,7 @@ public class LittleSearchEngine {
     * otherwise returns null. A keyword is any word that, after being stripped of any
     * TRAILING punctuation, consists only of alphabetic letters, and is not
     * a noise word. All words are treated in a case-INsensitive manner.
-    *
+    * <p>
     * Punctuation characters are the following: '.', ',', '?', ':', ';' and '!'
     *
     * @param word Candidate word
@@ -198,7 +159,7 @@ public class LittleSearchEngine {
       }
 
       // Checks if the token only contains punctuation. Ex: "!!!!!"
-      if ((word != null) && (word.length() == 0)) {
+      if (word != null && word.length() == 0) {
          word = null;
       }
       //
@@ -214,8 +175,8 @@ public class LittleSearchEngine {
     *
     * @param occs List of Occurrences
     * @return Sequence of mid point indexes in the input list checked by the binary search process,
-    *         null if the size of the input list is 1. This returned array list is only used to test
-    *         your code - it is not used elsewhere in the program.
+    * null if the size of the input list is 1. This returned array list is only used to test
+    * your code - it is not used elsewhere in the program.
     */
    public ArrayList<Integer> insertLastOccurrence(ArrayList<Occurrence> occs) {
       ArrayList<Integer> listOfMidpoints = new ArrayList<>();
@@ -281,8 +242,8 @@ public class LittleSearchEngine {
     * @param kw1 First keyword
     * @param kw2 Second keyword
     * @return List of NAMES of documents in which either kw1 or kw2 occurs, arranged in descending order of
-    *         frequencies. The result size is limited to 5 documents. If there are no matching documents,
-    *         the result is null.
+    * frequencies. The result size is limited to 5 documents. If there are no matching documents,
+    * the result is null.
     */
    public ArrayList<String> top5search(String kw1, String kw2) {
       kw1 = kw1.toLowerCase();
@@ -353,10 +314,10 @@ public class LittleSearchEngine {
          }
          //
          // Mark it -1 if the end is reached
-         if ((index1 >= 0) && (index1 == occ1.size())) {                   // Reach the end of the list. Stop searching.
+         if (index1 >= 0 && index1 == occ1.size()) {                   // Reach the end of the list. Stop searching.
             index1 = -1;
          }
-         if (occ2 != null && (index2 >= 0) && (index2 == occ2.size())) {   // Reach the end of the list. Stop searching.
+         if (occ2 != null && index2 >= 0 && index2 == occ2.size()) {   // Reach the end of the list. Stop searching.
             index2 = -1;
          }
       }
