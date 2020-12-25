@@ -24,7 +24,7 @@
 
    A text document has 32 distinct characters, with equal number of occurrences of each, and each character stored in 8 bits. What would be the ratio of the length of the Huffman coded document to the original? Detail how you arrived at your answer - draw pictures if you are able to explain better that way. An answer without reasoning will get 1 point. An incorrect answer will get no credit, the reasoning will be ignored.
 
-## Q2. Expression Tree [13 pts]
+## Question 2: Expression Tree [13 pts]
 
 You are given an expression tree that contains only integer constants and the binary operators `'-'`, `'+'`, `'*'` and `'/'`. Here’s an example, along with the tree node class:
 
