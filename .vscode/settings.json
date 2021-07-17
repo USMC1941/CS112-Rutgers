@@ -1,7 +1,16 @@
 {
    "java.project.sourcePaths": [
       "Textbook/src",
+      "Java_Code/Venugopal/src",
       "Java_Code/Centeno/src",
-      "Java_Code/Venugopal/src"
+      "Assignments/SimplifiedSolitaireEncryption/src",
+      "Assignments/Polynomial/src",
+      "Assignments/MST/src",
+      "Assignments/LittleSearchEngine/src",
+      "Assignments/IntervalTree/src",
+      "Assignments/Friends/src",
+      "Assignments/ExpressionEvaluation/src",
+      "Assignments/BigInteger/src",
+      "Assignments/Trie/src"
    ]
 }
