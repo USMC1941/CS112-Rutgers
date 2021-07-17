@@ -1,5 +1,7 @@
 {
    "java.project.sourcePaths": [
-      "Textbook/src"
+      "Textbook/src",
+      "Java_Code/Centeno/src",
+      "Java_Code/Venugopal/src"
    ]
 }
