@@ -1,0 +1,36 @@
+<html>
+   <head>
+      <script>
+         var centerNode;
+         var emb = "b";
+         function replace(str) {
+            var embChild = centerNode.childNodes[1];
+            var embText = embChild.firstChild;
+            var embNode = document.createElement(str);
+            embNode.appendChild(embText);
+            centerNode.replaceChild(embNode, embChild);
+            if (str == "b") {
+               emb = "em";
+               inpNode.value = "Replace b with em";
+            } else {
+               emb = "b";
+               inpNode.value = "Replace em with b";
+            }
+            return false;
+         }
+      </script>
+   </head>
+   <body id="bd">
+      <center id="cent">The <em>quick</em> brown fox</center>
+      <p></p>
+      <center>
+         <form action="try.html" onclick="return replace(emb);">
+            <input id="inp" type="submit" value="Replace em with b" />
+         </form>
+         <script>
+            centerNode = document.getElementById("cent");
+            inpNode = document.getElementById("inp");
+         </script>
+      </center>
+   </body>
+</html>
