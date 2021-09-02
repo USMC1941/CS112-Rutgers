@@ -14,7 +14,7 @@ In this assignment you will implement an HTML Document Object Model (DOM) Tree. 
 
    Most compilation errors occur for two reasons:
 
-   1. You are programming outside Eclipse, and you delete the "package" statement at the top of the file. If you do this, you are changing the program structure, and it will not compile when we test it.
+   1. You are programming outside Eclipse, and you delete the `package` statement at the top of the file. If you do this, you are changing the program structure, and it will not compile when we test it.
    2. You make some last minute changes, and submit without compiling.
 
    **To avoid these issues, (a) START EARLY, and give yourself plenty of time to work through the assignment, and (b) Submit a version well before the deadline so there is at least something in Autolab for us to grade.**
@@ -123,15 +123,15 @@ Moreover, the format of the HTML document itself (supplied through an input file
 
 -  Every tag will appear on a line by itself - there will be nothing else on that line
 
--  Every HTML file will mandatorily have the html and body tags
+-  Every HTML file will mandatorily have the `html` and `body` tags
 
--  The HTML will be well-formed, in that every tag will have a closing counterpart. For instance, every tag construct of the form <b> will be closed by </b>
+-  The HTML will be well-formed, in that every tag will have a closing counterpart. For instance, every tag construct of the form `<b>` will be closed by `</b>`
 
--  If there is a table tag in the document, there will only be one such tag. (In other words, there won't be more than one table tag, if at all there is one.)
+-  If there is a `table` tag in the document, there will only be one such tag. (In other words, there won't be more than one `table` tag, if at all there is one.)
 
--  A table can have any number of rows (tr tags nested under table), and a row can have any number of columns (td tags nested under tr), but all rows will have the same number of columns.
+-  A table can have any number of rows (`tr` tags nested under `table`), and a row can have any number of columns (`td` tags nested under `tr`), but all rows will have the same number of columns.
 
--  Nesting of the same type of tags is only permitted with ol and ul tags. That is, an ol tag may have another ol tag nested within it, and a ul tag may have another ul nested within it. But you may NOT have a b tag within a b tag, etc.
+-  Nesting of the same type of tags is only permitted with `ol` and `ul` tags. That is, an `ol` tag may have another `ol` tag nested within it, and a `ul` tag may have another `ul` nested within it. But you may NOT have a `b` tag within a `b` tag, etc.
 
 -  There will not be any tags not defined in the above list
 
@@ -384,7 +384,7 @@ Choose action: (p)rint Tree, (h)tml, (r)eplace tag, (b)oldface row, (d)elete tag
 
 > NOTE: The tree structure printed via the `print()` method as above is the test for correctness.
 
-```
+```html
 Choose action: (p)rint Tree, (h)tml, (r)eplace tag, (b)oldface row, (d)elete tag, (a)dd tag, or (q)uit? => h
 
 <html>
@@ -431,7 +431,7 @@ Choose action: (p)rint Tree, (h)tml, (r)eplace tag, (b)oldface row, (d)elete tag
 
 Submit your `Tree.java` file ONLY.
 
-If you submit a .class or .zip, or any other file, you will get no credit even if you have a working version on your computer.
+If you submit a `.class` or `.zip`, or any other file, you will get no credit even if you have a working version on your computer.
 
 ## Grading
 
