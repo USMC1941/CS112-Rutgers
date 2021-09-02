@@ -1,0 +1,139 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>
+Programming Assignment 3 - DOM Tree Test Cases
+</title>
+<style>
+body { font: 14px Trebuchet MS, Verdana, Arial, Helvetica, sans-serif; }
+div.code { background: lightgrey; width: 40%;}
+table { border-collapse: collapse; cellspacing: 0px; margin-left: 10%;}
+th { font: bold 14px Trebuchet MS; border-bottom: 1px solid black; padding: 10px; text-align:left;}
+td { padding: 2px; font: 13px Trebuchet MS; align:left; padding-right: 10px; }
+td.pts { text-align: right; padding-right: 20px; vertical-align: top;}
+tt { color: blue; font-weight: bold;}
+a, a:visited { color: blue; }
+pre { color: blue; }
+</style>
+</head><body><center>
+<h2>Programming Assignment 3 - DOM Tree</h2>
+<h2>Test Cases</h2>
+<hr>
+</center>
+
+<ol>
+<li><b><tt>build</tt>: 20 pts</b>
+
+<table>
+<tbody><tr><th>Points</th><th>Test Case</th><th>Description</th></tr>
+<tr>
+<td class="pts">2</td>
+<td><a href="testb2.html">testb2.html</a></td>
+<td>Document with a single line of text</td>
+</tr>
+<tr>
+<td class="pts">2</td>
+<td><a href="testb3.html">testb3.html</a></td>
+<td>Mix of plain text, <tt>b</tt>, <tt>em</tt>, and <tt>p</tt> tags</td>
+</tr>
+<tr>
+<td class="pts">3</td>
+<td><a href="testb4.html">testb4.html</a></td>
+<td><tt>ol</tt> tag
+</tr>
+<tr>
+<td class="pts">3</td>
+<td><a href="testb5.html">testb5.html</a></td>
+<td><tt>ul</tt> tag
+</tr>
+<tr>
+<td class="pts">3</td>
+<td><a href="testb6.html">testb6.html</a></td>
+<td>Simple <tt>table</tt>, <tt>tr</tt>, <tt>td</tt> tags
+</tr>
+<tr>
+<td class="pts">3</td>
+<td><a href="testb7.html">testb7.html</a></td>
+<td>Nested <tt>ul</tt> and <tt>ol</tt>
+</tr>
+<tr>
+<td class="pts">4</td>
+<td><a href="testb8.html">testb8.html</a></td>
+<td><tt>ul</tt> and <tt>ol</tt> nested in <tt>td</tt>
+</tr>
+</tbody>
+</table>
+
+<p><li><b><tt>replaceTag</tt>: 15 pts</b>
+
+<table>
+<tbody><tr><th>Points</th><th>Input</th><th>Replace</th><th>Output</th></tr>
+<tr><td class="pts">3</td><td><a href="testb3.html">testb3.html</td>
+<td><tt>b</tt> --> <tt>em</tt></td><td><a href="testb3tr.html">testb3tr.html</td></tr>
+<tr><td class="pts">3</td><td><a href="ex1.html">ex1.html</td>
+<td><tt>em</tt> --> <tt>b</tt></td><td><a href="ex1tr1.html">ex1tr1.html</td></tr>
+<tr><td class="pts">3</td><td><a href="testb4.html">testb4.html</td>
+<td><tt>ol</tt> --> <tt>ul</tt></td><td><a href="testb4tr.html">testb4tr.html</td></tr>
+<tr><td class="pts">3</td><td><a href="testb8.html">testb8.html</td>
+<td><tt>ul</tt> --> <tt>ol</tt></td><td><a href="testb8tr.html">testb8tr.html</td></tr>
+<tr><td class="pts">3</td><td><a href="testr1.html">testr1.html</td>
+<td><tt>p</tt> --> <tt>em</tt></td><td><a href="testr1tr.html">testr1tr.html</td></tr>
+
+</tbody></table>
+
+<p><li><tt>removeTag</tt>: 30 pts</b>
+<table>
+<tbody><tr><th>Points</th><th>Input</th><th>Remove</th><th>Output</th></tr>
+<tr><td class="pts">2</td><td><a href="testrep1.html">testrep1.html</td>
+<td><tt>b</tt></td><td><a href="testrep1tr.html">testrep1tr.html</td></tr>
+<tr><td class="pts">3</td><td><a href="testrep2.html">testrep2.html</td>
+<td><tt>em</tt></td><td><a href="testrep2tr.html">testrep2tr.html</td></tr>
+<tr><td class="pts">4</td><td><a href="testrep3.html">testrep3.html</td>
+<td><tt>p</tt></td><td><a href="testrep3tr.html">testrep3tr.html</td></tr>
+<tr><td class="pts">5</td><td><a href="testb4.html">testb4.html</td>
+<td><tt>ol</tt></td><td><a href="testb4reptr.html">testb4reptr.html</td></tr>
+<tr><td class="pts">6</td><td><a href="ex3.html">ex3.html</td>
+<td><tt>ol</tt></td><td><a href="ex3tr1.html">ex3tr1.html</td></tr>
+<tr><td class="pts">5</td><td><a href="testb8.html">testb8.html</td>
+<td><tt>ul</tt></td><td><a href="testb8reptr.html">testb8reptr.html</td></tr>
+<tr><td class="pts">5</td><td><a href="testrep4.html">testrep4.html</td>
+<td><tt>em</tt></td><td><a href="testrep4tr.html">testrep4tr.html</td></tr>
+</tbody>
+</table>
+
+<p><li><b><tt>boldRow</tt>: 15 pts</b>
+<table>
+<tbody><tr><th>Points</th><th>Input</th><th>Row</th><th>Output</th></tr>
+<tr><td class="pts">4</td><td><a href="testbf1.html">testbf1.html</td>
+<td><tt>2</tt></td><td><a href="testbf1tr.html">testbf1tr.html</td></tr>
+<tr><td class="pts">5</td><td><a href="testbf2.html">testbf2.html</td>
+<td><tt>1</tt></td><td><a href="testbf2tr.html">testbf2tr.html</td></tr>
+<tr><td class="pts">6</td><td><a href="testbf3.html">testbf3.html</td>
+<td><tt>3</tt></td><td><a href="testbf3tr.html">testbf3tr.html</td></tr>
+</tbody>
+</table>
+
+<p><li><tt>addTag</tt>: 20 pts</b>
+<table>
+<tbody><tr><th>Points</th><th>Input</th><th>Word</th><th>Tag</th><th>Output</th></tr>
+<tr><td class="pts">2</td><td><a href="testhello.html">testhello.html</td>
+<td>hello</td><td><tt>b</tt></td><td><a href="testhellotr.html">testhellotr.html</td></tr>
+<tr><td class="pts">1</td><td><a href="testhello1.html">testhello1.html</td>
+<td>hello</td><td><tt>em</tt></td><td><a href="testhello1tr.html">testhello1tr.html</td></tr>
+<tr><td class="pts">2</td><td><a href="testhw.html">testhw.html</td>
+<td>Hello</td><td><tt>em</tt></td><td><a href="testhwtr1.html">testhwtr1.html</td></tr>
+<tr><td class="pts">3</td><td><a href="testhw.html">testhw.html</td>
+<td>world</td><td><tt>em</tt></td><td><a href="testhwtr2.html">testhwtr2.html</td></tr>
+<tr><td class="pts">3</td><td><a href="testmom.html">testmom.html</td>
+<td>over</td><td><tt>em</tt></td><td><a href="testmomtr.html">testmomtr.html</td></tr>
+<tr><td class="pts">3</td><td><a href="testqbf.html">testqbf.html</td>
+<td>the</td><td><tt>em</tt></td><td><a href="testqbftr.html">testqbfr.html</td></tr>
+<tr><td class="pts">3</td><td><a href="testvvb.html">testvvb.html</td>
+<td>very</td><td><tt>b</tt></td><td><a href="testvvbtr.html">testvvbtr.html</td></tr>
+<tr><td class="pts">3</td><td><a href="ex3.html">ex3.html</td>
+<td>item</td><td><tt>em</tt></td><td><a href="ex3tr2.html">ex3tr2.html</td></tr>
+</tbody>
+</table>
+
+</ol>
+</body></html>
