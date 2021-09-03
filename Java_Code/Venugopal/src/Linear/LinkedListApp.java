@@ -2,11 +2,11 @@ package Linear;
 
 public class LinkedListApp {
 
-	public static void main(String[] args) {
-		LinkedList<Integer> intLL = new LinkedList<Integer>();
-		intLL.addFront(5);  // 5 is auto-boxed to Integer 5
+    public static void main(String[] args) {
+        LinkedList<Integer> intLL = new LinkedList<>();
+        intLL.addFront(5); // 5 is auto-boxed to Integer 5
 
-		LinkedList<String> strLL = new LinkedList<String>();
-		strLL.addFront("5");
-	}
+        LinkedList<String> strLL = new LinkedList<>();
+        strLL.addFront("5");
+    }
 }

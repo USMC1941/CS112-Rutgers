@@ -1,15 +1,15 @@
 package Linear;
 
 public class IntNode {
-	int     data;
-	IntNode next;
+    int data;
+    IntNode next;
 
-	public IntNode(int data, IntNode next) {
-		this.data = data;
-		this.next = next;
-	}
+    public IntNode(int data, IntNode next) {
+        this.data = data;
+        this.next = next;
+    }
 
-	public String toString() {
-		return data + "";
-	}
+    public String toString() {
+        return data + "";
+    }
 }

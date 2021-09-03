@@ -2,11 +2,14 @@ package linear;
 
 public class IntNode {
 
-	int     data; // data part of our LL
-	IntNode next; // link to the next node in the LL
+    /** data part of our LL */
+    int data;
 
-	IntNode(int data, IntNode next) {
-		this.data = data;
-		this.next = next;
-	}
+    /** link to the next node in the LL */
+    IntNode next;
+
+    IntNode(int data, IntNode next) {
+        this.data = data;
+        this.next = next;
+    }
 }
