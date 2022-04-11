@@ -1,5 +1,4 @@
 /**
- *
  * Percolation
  *
  * @author Ana Paula Centeno

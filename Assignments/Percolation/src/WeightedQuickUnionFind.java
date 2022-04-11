@@ -1,5 +1,4 @@
 /**
- *
  * Implementation of Weighted Union Find
  *
  * @author Ana Paula Centeno
