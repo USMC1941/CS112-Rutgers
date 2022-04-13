@@ -325,7 +325,7 @@ Recurse on right subtree ->
     return { [6, 8] }
 
 Add results -> Resultlist = { [1, 8], [3, 7], [2, 5], [6, 8] }
-return { [1, 8], [3, 7], [2,5], [6, 8]}
+return { [1, 8], [3, 7], [2,5], [6, 8] }
 ```
 
 ## Test your understanding
@@ -347,7 +347,6 @@ You will see a project called Interval Tree with the following classes in `packa
 -   `IntervalTree`
 -   `IntervalTreeNode`
 -   `Queue`
--   `Sorter`
 
 There is another `package`, `apps` which has a single class, `IntervalTreeDriver`.
 
