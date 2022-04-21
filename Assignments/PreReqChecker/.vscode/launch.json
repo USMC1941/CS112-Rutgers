@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch SafeIterable",
+            "request": "launch",
+            "mainClass": "autograder.SafeIterable",
+            "projectName": "PreReqChecker"
+        },
+        {
+            "type": "java",
+            "name": "Launch StdIn",
+            "request": "launch",
+            "mainClass": "autograder.StdIn",
+            "projectName": "PreReqChecker"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestPreReqChecker",
+            "request": "launch",
+            "mainClass": "autograder.TestPreReqChecker",
+            "projectName": "PreReqChecker"
+        },
+        {
+            "type": "java",
+            "name": "Launch UtilCOS",
+            "request": "launch",
+            "mainClass": "autograder.UtilCOS",
+            "projectName": "PreReqChecker"
+        },
+        {
+            "type": "java",
+            "name": "Launch AdjList",
+            "request": "launch",
+            "mainClass": "prereqchecker.AdjList",
+            "projectName": "PreReqChecker"
+        },
+        {
+            "type": "java",
+            "name": "Launch Eligible",
+            "request": "launch",
+            "mainClass": "prereqchecker.Eligible",
+            "projectName": "PreReqChecker"
+        },
+        {
+            "type": "java",
+            "name": "Launch NeedToTake",
+            "request": "launch",
+            "mainClass": "prereqchecker.NeedToTake",
+            "projectName": "PreReqChecker"
+        },
+        {
+            "type": "java",
+            "name": "Launch SchedulePlan",
+            "request": "launch",
+            "mainClass": "prereqchecker.SchedulePlan",
+            "projectName": "PreReqChecker"
+        },
+        {
+            "type": "java",
+            "name": "Launch StdOut",
+            "request": "launch",
+            "mainClass": "prereqchecker.StdOut",
+            "projectName": "PreReqChecker"
+        },
+        {
+            "type": "java",
+            "name": "Launch ValidPrereq",
+            "request": "launch",
+            "mainClass": "prereqchecker.ValidPrereq",
+            "projectName": "PreReqChecker"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+23
+cs111
+cs213
+cs323
+cs112
+cs417
+cs344
+cs416
+cs437
+cs415
+cs206
+mat152
+cs452
+cs314
+cs336
+cs211
+cs214
+cs352
+mat151
+cs440
+cs210
+cs439
+cs205
+mat250
+29
+cs112 cs111
+cs112 mat151
+mat152 mat151
+cs213 cs112
+cs205 cs111
+cs205 mat152
+cs210 cs111
+cs211 cs112
+cs214 cs211
+mat250 mat152
+cs206 cs205
+cs336 cs112
+cs336 cs205
+cs344 cs206
+cs344 cs112
+cs439 cs205
+cs314 cs211
+cs314 cs205
+cs323 mat250
+cs352 cs206
+cs352 cs211
+cs415 cs211
+cs415 cs314
+cs416 cs214
+cs417 cs416
+cs437 cs336
+cs437 cs214
+cs440 cs205
+cs452 cs344
