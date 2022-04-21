@@ -37,6 +37,7 @@ public class NeedToTake {
         if (args.length < 3) {
             StdOut.println(
                     "Execute: java NeedToTake <adjacency list INput file> <need to take INput file> <need to take OUTput file>");
+            return;
         }
 
         // WRITE YOUR CODE HERE
