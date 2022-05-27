@@ -1,0 +1,66 @@
+65
+add 3 852 item0 0 19
+add 9 201 item1 18 79
+add 15 311 item2 44 23
+add 18 844 item3 39 62
+purchase 18 852 28
+add 21 928 item4 56 25
+restock 201 13
+delete 311
+add 22 777 item5 85 10
+add 30 995 item6 51 2
+add 32 505 item7 12 48
+purchase 32 201 76
+add 32 335 item8 84 70
+add 36 927 item9 21 89
+restock 777 80
+purchase 36 505 59
+add 36 135 item10 95 66
+add 44 398 item11 47 1
+add 47 761 item12 25 46
+add 50 400 item13 22 8
+add 51 434 item14 92 11
+delete 777
+add 55 798 item15 60 97
+delete 398
+add 63 923 item16 93 91
+restock 761 71
+add 81 260 item17 65 14
+add 85 515 item18 14 30
+add 87 986 item19 7 7
+purchase 87 761 132
+add 89 314 item20 97 17
+delete 995
+add 112 607 item21 4 42
+delete 852
+add 119 511 item22 33 87
+add 120 596 item23 91 6
+add 127 143 item24 3 94
+add 129 926 item25 54 43
+add 134 576 item26 83 45
+add 137 388 item27 80 27
+add 149 934 item28 74 24
+add 150 793 item29 29 21
+add 159 652 item30 43 22
+add 159 884 item31 20 72
+restock 986 23
+add 160 611 item32 5 20
+add 161 190 item33 48 38
+add 164 66 item34 61 88
+add 166 308 item35 89 31
+add 169 191 item36 38 54
+add 169 486 item37 98 99
+add 170 112 item38 17 77
+add 174 896 item39 79 32
+add 176 369 item40 46 65
+add 177 437 item41 16 44
+add 179 138 item42 86 64
+add 179 507 item43 15 96
+add 183 281 item44 28 51
+add 186 490 item45 72 85
+add 190 353 item46 36 98
+purchase 190 852 123
+add 190 427 item47 77 5
+add 193 581 item48 62 67
+restock 191 11
+add 195 630 item49 19 80

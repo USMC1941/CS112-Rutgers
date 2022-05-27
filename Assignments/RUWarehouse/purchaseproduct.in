@@ -1,0 +1,14 @@
+13
+add 4 140 Hoodie 100 6
+add 5 61 Water-bottle 100 4
+purchase 5 61 107
+add 6 9 T-shirt 100 8
+add 9 377 Lanyard 100 5
+add 14 923 Key-chain 100 3
+purchase 14 61 71
+add 14 637 Pants 100 7
+add 16 378 Notebook 100 2
+purchase 16 378 17
+add 23 786 Flag 100 9
+add 25 248 Sunglasses 100 0
+add 26 28 Stickers 100 1

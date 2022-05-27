@@ -1,0 +1,14 @@
+13
+add 1 208 Hoodie 10 7
+add 9 571 Water-bottle 40 8
+add 10 43 T-shirt 36 9
+delete 571
+add 12 981 Lanyard 13 2
+delete 208
+add 15 566 Key-chain 0 4
+add 15 405 Pants 39 0
+add 17 62 Notebook 48 6
+add 18 871 Flag 24 3
+add 19 5 Sunglasses 21 1
+add 25 148 Stickers 29 5
+delete 5
