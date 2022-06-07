@@ -1,5 +1,8 @@
+package huffman;
+
 /**
- * This class represents a node of a huffman coding tree, and contains a CharFreq object as its data
+ * This class represents a node of a huffman coding tree,
+ * and contains a {@link CharFreq} object as its data
  *
  * @author Ishaan Ivaturi
  */

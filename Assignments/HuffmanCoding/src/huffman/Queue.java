@@ -1,6 +1,9 @@
+package huffman;
+
 /**
- * This class contains a generic queue class which supports isEmpty, size, enqueue, dequeue, and
- * peek. It is implemented using a circular linked list.
+ * This class contains a generic queue class which supports
+ * isEmpty, size, enqueue, dequeue, and peek. It is implemented
+ * using a circular linked list.
  *
  * @author Ishaan Ivaturi
  */
