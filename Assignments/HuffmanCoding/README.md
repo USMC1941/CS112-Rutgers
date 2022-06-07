@@ -42,7 +42,7 @@ Now, imagine if we weren't forced to use eight bits for every character, and we 
 ? = 0, [space] = 10, A = 110, b = 111
 ```
 
-Then our string `A[]([]()) b ????` would become
+Then our string `A b ????` would become
 
 ```
 11010111100000
