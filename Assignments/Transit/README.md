@@ -52,9 +52,26 @@ Methods to be implemented by you:
     -   One line containing the number of walking locations
     -   One line containing each walking location, space separated
 
-Below is an example of running the driver to help test this method.
+Below is an example of running the driver to help test this method:
 
-![makeList example](img/makeList-example.png)
+```
+Enter a layered list input file => input2.txt
+
+What method would you like to test?
+1. makeList
+2. removeStation
+3. addStop
+4. bestPath
+5. duplicate
+6. addScooter
+Enter a number => 1
+
+0------->3---------->7------------------->13--------------------->19
+|        |           |                    |                       |
+0---->2->3---->5---->7----------->11----->13------------->17----->19------------->23
+|     |  |     |     |            |       |               |       |               |
+0->1->2->3->4->5->6->7->8->9->10->11->12->13->14->15->16->17->18->19->20->21->22->23->24->25
+```
 
 #### `removeTrainStation`
 
@@ -64,9 +81,36 @@ Below is an example of running the driver to help test this method.
 -   If the specified train station doesn't exist, do nothing. The specified train stations used for grading are guaranteed to not be the zero node.
 -   The input files to test this method are the same as `makeList`.
 
-Below is an example of running the driver to help test this method.
+Below is an example of running the driver to help test this method:
 
-![removeTrainStation example](img/removeTrainStation-example.png)
+```
+Enter a layered list input file => input2.txt
+
+What method would you like to test?
+1. makeList
+2. removeStation
+3. addStop
+4. bestPath
+5. duplicate
+6. addScooter
+Enter a number => 2
+
+Original List:
+0------->3---------->7------------------->13--------------------->19
+|        |           |                    |                       |
+0---->2->3---->5---->7----------->11----->13------------->17----->19------------->23
+|     |  |     |     |            |       |               |       |               |
+0->1->2->3->4->5->6->7->8->9->10->11->12->13->14->15->16->17->18->19->20->21->22->23->24->25
+
+Enter a station to remove => 13
+
+Final list:
+0------->3---------->7------------------------------------------->19
+|        |           |                                            |
+0---->2->3---->5---->7----------->11----->13------------->17----->19------------->23
+|     |  |     |     |            |       |               |       |               |
+0->1->2->3->4->5->6->7->8->9->10->11->12->13->14->15->16->17->18->19->20->21->22->23->24->25
+```
 
 #### `addBusStop`
 
@@ -76,9 +120,36 @@ Below is an example of running the driver to help test this method.
 -   Perform your operations on the layered linked list referred by `trainZero` without returning anything.
 -   The input files to test this method are the same as `makeList`.
 
-Below is an example of running the driver to help test this method.
+Below is an example of running the driver to help test this method:
 
-![addBusStop example](img/addBusStop-example.png)
+```
+Enter a layered list input file => input2.txt
+
+What method would you like to test?
+1. makeList
+2. removeStation
+3. addStop
+4. bestPath
+5. duplicate
+6. addScooter
+Enter a number => 3
+
+Original List:
+0------->3---------->7------------------->13--------------------->19
+|        |           |                    |                       |
+0---->2->3---->5---->7----------->11----->13------------->17----->19------------->23
+|     |  |     |     |            |       |               |       |               |
+0->1->2->3->4->5->6->7->8->9->10->11->12->13->14->15->16->17->18->19->20->21->22->23->24->25
+
+Enter a bus stop to add => 15
+
+Final list:
+0------->3---------->7------------------->13--------------------->19
+|        |           |                    |                       |
+0---->2->3---->5---->7----------->11----->13----->15----->17----->19------------->23
+|     |  |     |     |            |       |       |       |       |               |
+0->1->2->3->4->5->6->7->8->9->10->11->12->13->14->15->16->17->18->19->20->21->22->23->24->25
+```
 
 #### `bestPath`
 
@@ -90,7 +161,34 @@ Below is an example of running the driver to help test this method.
 
 Below is an example of running the driver to help test this method:
 
-![bestPath example](img/bestPath-example.png)
+```
+Enter a layered list input file => input2.txt
+
+What method would you like to test?
+1. makeList
+2. removeStation
+3. addStop
+4. bestPath
+5. duplicate
+6. addScooter
+Enter a number => 4
+
+Layered Linked List:
+0------->3---------->7------------------->13--------------------->19
+|        |           |                    |                       |
+0---->2->3---->5---->7----------->11----->13------------->17----->19------------->23
+|     |  |     |     |            |       |               |       |               |
+0->1->2->3->4->5->6->7->8->9->10->11->12->13->14->15->16->17->18->19->20->21->22->23->24->25
+
+Enter a destination => 11
+
+Best path:
+0>>>>>>>>3>>>>>>>>>>>7
+                     V
+                     7>>>>>>>>>>>>11
+                                  V
+                                  11
+```
 
 #### `duplicate`
 
@@ -101,7 +199,32 @@ Below is an example of running the driver to help test this method:
 
 Below is an example of running the driver to help test this method:
 
-![duplicate example](img/duplicate-example.png)
+```
+Enter a layered list input file => input2.txt
+
+What method would you like to test?
+1. makeList
+2. removeStation
+3. addStop
+4. bestPath
+5. duplicate
+6. addScooter
+Enter a number => 5
+
+Original list:
+0------->3---------->7------------------->13--------------------->19
+|        |           |                    |                       | 
+0---->2->3---->5---->7----------->11----->13------------->17----->19------------->23
+|     |  |     |     |            |       |               |       |               | 
+0->1->2->3->4->5->6->7->8->9->10->11->12->13->14->15->16->17->18->19->20->21->22->23->24->25
+
+Duplicate:
+0------->3---------->7------------------->13--------------------->19
+|        |           |                    |                       | 
+0---->2->3---->5---->7----------->11----->13------------->17----->19------------->23
+|     |  |     |     |            |       |               |       |               | 
+0->1->2->3->4->5->6->7->8->9->10->11->12->13->14->15->16->17->18->19->20->21->22->23->24->25
+```
 
 #### `addScooter`
 
@@ -118,7 +241,36 @@ Your city has FINALLY added those new electric scooters (you may have even seen 
 
 Below is an example of running the driver to help test this method:
 
-![addScooter example](img/addScooter-example.png)
+```
+Enter a layered list input file => input2.txt
+
+What method would you like to test?
+1. makeList
+2. removeStation
+3. addStop
+4. bestPath
+5. duplicate
+6. addScooter
+Enter a number => 6
+
+Original list:
+0------->3---------->7------------------->13--------------------->19
+|        |           |                    |                       | 
+0---->2->3---->5---->7----------->11----->13------------->17----->19------------->23
+|     |  |     |     |            |       |               |       |               | 
+0->1->2->3->4->5->6->7->8->9->10->11->12->13->14->15->16->17->18->19->20->21->22->23->24->25
+
+Enter a scooter layer input file => scooter2.txt
+
+Final list:
+0------->3---------->7------------------->13--------------------->19
+|        |           |                    |                       | 
+0---->2->3---->5---->7----------->11----->13------------->17----->19------------->23
+|     |  |     |     |            |       |               |       |               | 
+0->1->2->3---->5---->7---->9----->11----->13----->15----->17----->19----->21----->23
+|  |  |  |     |     |     |      |       |       |       |       |       |       | 
+0->1->2->3->4->5->6->7->8->9->10->11->12->13->14->15->16->17->18->19->20->21->22->23->24->25
+```
 
 ## Implementation Notes
 
