@@ -59,7 +59,7 @@ Enter a layered list input file => input2.txt
 
 What method would you like to test?
 1. makeList
-2. removeStation
+2. removeTrainStation
 3. addStop
 4. bestPath
 5. duplicate
@@ -88,7 +88,7 @@ Enter a layered list input file => input2.txt
 
 What method would you like to test?
 1. makeList
-2. removeStation
+2. removeTrainStation
 3. addStop
 4. bestPath
 5. duplicate
@@ -127,7 +127,7 @@ Enter a layered list input file => input2.txt
 
 What method would you like to test?
 1. makeList
-2. removeStation
+2. removeTrainStation
 3. addStop
 4. bestPath
 5. duplicate
@@ -166,7 +166,7 @@ Enter a layered list input file => input2.txt
 
 What method would you like to test?
 1. makeList
-2. removeStation
+2. removeTrainStation
 3. addStop
 4. bestPath
 5. duplicate
@@ -204,7 +204,7 @@ Enter a layered list input file => input2.txt
 
 What method would you like to test?
 1. makeList
-2. removeStation
+2. removeTrainStation
 3. addStop
 4. bestPath
 5. duplicate
@@ -246,7 +246,7 @@ Enter a layered list input file => input2.txt
 
 What method would you like to test?
 1. makeList
-2. removeStation
+2. removeTrainStation
 3. addStop
 4. bestPath
 5. duplicate
